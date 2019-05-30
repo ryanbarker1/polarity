@@ -15,7 +15,7 @@ export class ProfilesComponent implements OnInit {
     }
 
     updateListing(){
-        this.profilesService.getBooks().subscribe(data => this.profiles = data)
+        this.profilesService.getProfiles().subscribe(data => this.profiles = data)
     }
     
  

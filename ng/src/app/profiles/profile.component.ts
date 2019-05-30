@@ -4,7 +4,7 @@ import { ProfilesService } from '../services/profiles.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-    selector: "book-el",
+    selector: "profile-el",
     templateUrl: "./profile.component.html"
 })
 export class ProfileComponent {
@@ -19,7 +19,7 @@ export class ProfileComponent {
     }
 
     onDelete(profile : Profile){
-        this.booksService.deleteBook(profile).subscribe(res => {
+        this.booksService.deleteProfile(profile).subscribe(res => {
             this.profileDeleted.emit(res)
             this.toastr.success("The book has been successfully deleted.")
         })

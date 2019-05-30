@@ -9,7 +9,8 @@ import { ProfileComponent } from './profiles/profile.component';
 import { routes } from './routes'
 import { RouterModule } from '@angular/router';
 import { ProfileFormComponent } from './profiles/profile-form.component';
-import { ToastrModule } from 'ngx-toastr'
+import { ToastrModule } from 'ngx-toastr';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr'
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
