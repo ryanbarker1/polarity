@@ -1,0 +1,5 @@
+
+<a routerLink="/profiles/new" class="btn btn-primary">New Profile</a>
+<div class="card-columns">
+    <book-el *ngFor="let profile of profiles" [profile]="profile" ></book-el>
+</div>
